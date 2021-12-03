@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopKaro/static/css/main.3e6184cb.chunk.css",
+    "main.css": "/shopKaro/static/css/main.fe98693a.chunk.css",
     "main.js": "/shopKaro/static/js/main.aab52cb1.chunk.js",
     "main.js.map": "/shopKaro/static/js/main.aab52cb1.chunk.js.map",
     "runtime-main.js": "/shopKaro/static/js/runtime-main.d8820a5e.js",
@@ -8,13 +8,13 @@
     "static/js/2.0ad6001d.chunk.js": "/shopKaro/static/js/2.0ad6001d.chunk.js",
     "static/js/2.0ad6001d.chunk.js.map": "/shopKaro/static/js/2.0ad6001d.chunk.js.map",
     "index.html": "/shopKaro/index.html",
-    "static/css/main.3e6184cb.chunk.css.map": "/shopKaro/static/css/main.3e6184cb.chunk.css.map",
+    "static/css/main.fe98693a.chunk.css.map": "/shopKaro/static/css/main.fe98693a.chunk.css.map",
     "static/js/2.0ad6001d.chunk.js.LICENSE.txt": "/shopKaro/static/js/2.0ad6001d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d8820a5e.js",
     "static/js/2.0ad6001d.chunk.js",
-    "static/css/main.3e6184cb.chunk.css",
+    "static/css/main.fe98693a.chunk.css",
     "static/js/main.aab52cb1.chunk.js"
   ]
 }

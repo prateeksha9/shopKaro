@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/shopKaro/static/css/main.f120667d.chunk.css",
-    "main.js": "/shopKaro/static/js/main.e702c369.chunk.js",
-    "main.js.map": "/shopKaro/static/js/main.e702c369.chunk.js.map",
+    "main.js": "/shopKaro/static/js/main.46419ee1.chunk.js",
+    "main.js.map": "/shopKaro/static/js/main.46419ee1.chunk.js.map",
     "runtime-main.js": "/shopKaro/static/js/runtime-main.d8820a5e.js",
     "runtime-main.js.map": "/shopKaro/static/js/runtime-main.d8820a5e.js.map",
     "static/js/2.285a7a2e.chunk.js": "/shopKaro/static/js/2.285a7a2e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.d8820a5e.js",
     "static/js/2.285a7a2e.chunk.js",
     "static/css/main.f120667d.chunk.css",
-    "static/js/main.e702c369.chunk.js"
+    "static/js/main.46419ee1.chunk.js"
   ]
 }

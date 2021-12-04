@@ -255,3 +255,8 @@ code {
   height: 35px;
   border-width: 0;
 }
+
+.cardPrAction {
+  display: flex;
+  flex-direction: row;
+}

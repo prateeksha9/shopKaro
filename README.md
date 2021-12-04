@@ -19,6 +19,7 @@ ShopKaro web App is made using react-redux. In this web app you can get the deta
 - Service used to make dummy server: Typicode
 - link to typicode : https://my-json-server.typicode.com/
 - API link: https://my-json-server.typicode.com/prateeksha9/server
+- Github Link to repository of dummy server: https://github.com/prateeksha9/server.git
 
 ## Available Scripts
 

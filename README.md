@@ -1,6 +1,30 @@
-# Getting Started with Create React App
+# shopKaro Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-ShopKaro web App is made using react-redux. In this web app you can get the details of all the products available on the app on the webApp by fetching them from the dummy server. 
+-As you click on the name of the product you will be navigated to the product specific page which will display the deatils of all that specific product. 
+-The web app also lets you add your own product by clicking on "Add Product" button on the navbar.
+-As you click on the "Sort" button on the navbar all the products will be sorted on the basis of its price.
+-All the prosucts can be edited and deleted by clicking on the suitable button on the product cards.
+-The app also lets you add your favourite products to the cart. It can be done by clicking on the cart button given on each product card.
+-On the cart page, you can increase the quantity, decrease the quantity and remove the product from the cart.
+
+# A glimpse of all the pages
+
+- homepage: ![image](https://user-images.githubusercontent.com/66215313/144703627-7f2336fc-bf70-4817-bf9c-ce76f954ad6c.png)
+- Add Product: ![image](https://user-images.githubusercontent.com/66215313/144703649-0cc5720b-35c8-4456-aaa6-3c5e9915e7d1.png)
+- Cart: ![image](https://user-images.githubusercontent.com/66215313/144703672-6d8849f4-9380-4ec4-a7b4-bc75c4e33b10.png)
+
+# NPM packages used
+
+- react redux, react thunk, react logger
+- react-router-dom
+
+# Important Links
+
+- hosting link: https://prateeksha9.github.io/shopKaro/ 
+- Service used to make dummy server: Typicode
+- link to typicode : https://my-json-server.typicode.com/
+- API link: https://my-json-server.typicode.com/prateeksha9/server
 
 ## Available Scripts
 

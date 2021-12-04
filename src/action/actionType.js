@@ -1,3 +1,5 @@
+// define all the required actions
+
 export const UPDATE_POSTS = 'UPDATE_POSTS';
 export const SORT_POSTS = 'SORT_POSTS';
 export const ADD_PRODUCT = 'ADD_PRODUCT';

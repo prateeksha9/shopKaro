@@ -3,13 +3,13 @@ import { useDispatch } from 'react-redux';
 import { increaseQuantity, reduceCart, decreaseQuantity } from '../action/cart';
 
 function CartItem(props) {
+  // get all the required properties from props
   const { name, brand, img, price, id } = props.item;
-  //   const [quantity, setQuantity] = useState('1');
 
+  // useDispatch is used to call actions on various events
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = () => {
-    // console.log(id);
     dispatch(reduceCart(id));
   };
 

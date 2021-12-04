@@ -1,31 +1,21 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router';
 import { useDispatch } from 'react-redux';
-import { deleteProductId, editProduct } from '../action/posts';
+import { editProduct } from '../action/posts';
 import { extendCart } from '../action/cart';
-import { Link } from 'react-router-dom';
 
-function Post(props) {
-  const { name, brand, description, img, price, id } = props.post;
+function ProductOnly() {
+  const params = useParams();
+  const posts = useSelector((state) => state.posts);
+  const index = posts.findIndex((prod) => prod.id === params.id);
   const [edit, setEdit] = useState(false);
   const [newDes, setNewDes] = useState('');
-  // const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
-
-  const addToCartAction = () => {
-    const newIteminCart = {
-      id: id,
-      name: name,
-      brand: brand,
-      img: img,
-      price: price,
-      quantity: 1,
-    };
-    dispatch(extendCart(newIteminCart));
-  };
-
+  const product = posts[index];
   const editDesDone = () => {
     setEdit(false);
-    dispatch(editProduct(id, newDes));
+    dispatch(editProduct(product.id, newDes));
   };
   const editDes = () => {
     setEdit(true);
@@ -33,34 +23,41 @@ function Post(props) {
   const handleChange = (e) => {
     setNewDes(e.target.value);
   };
-  const handleDelete = () => {
-    dispatch(deleteProductId(id));
+
+  const addToCartAction = () => {
+    const newIteminCart = {
+      id: product.id,
+      name: product.name,
+      brand: product.brand,
+      img: product.img,
+      price: product.price,
+      quantity: 1,
+    };
+    dispatch(extendCart(newIteminCart));
   };
 
   return (
     <div>
-      <div className="card">
+      <div className="cardPr">
         <div className="details">
           <div className="cardLeft">
-            {img === 'null' ? (
+            {product.img === 'null' ? (
               <img
                 src="https://us.123rf.com/450wm/blankstock/blankstock1904/blankstock190400607/119982741-no-or-stop-attach-document-icon-information-file-sign-paper-page-concept-symbol-upload-data-prohibit.jpg?ver=6"
                 alt="ProductPic"
               />
             ) : (
-              <img src={img} alt="ProductPic" />
+              <img src={product.img} alt="ProductPic" />
             )}
           </div>
           <div className="cardHead">
-            <Link to={`/product/${id}`}>
-              <h2>{name}</h2>
-            </Link>
+            <h2>{product.name}</h2>
 
             <span>
-              Brand: {brand}
+              Brand: {product.brand}
               <br></br>
             </span>
-            <span>Price: {price}</span>
+            <span>Price: {product.price}</span>
           </div>
         </div>
 
@@ -69,14 +66,14 @@ function Post(props) {
           {edit ? (
             <input
               type="text"
-              placeholder={description}
+              placeholder={product.description}
               onChange={(e) => handleChange(e)}
             />
           ) : (
-            <span>{description}</span>
+            <span>{product.description}</span>
           )}
         </div>
-        <div className="cardAction">
+        <div className="cardPrAction">
           <button onClick={addToCartAction}>
             <img
               src="https://cdn2.iconfinder.com/data/icons/e-commerce-46/64/x-07-512.png"
@@ -95,17 +92,10 @@ function Post(props) {
               />
             </button>
           )}
-
-          <button onClick={() => handleDelete()}>
-            <img
-              src="https://w7.pngwing.com/pngs/228/54/png-transparent-logo-trademark-brand-delete-button-miscellaneous-text-trademark.png"
-              alt="delete"
-            />
-          </button>
         </div>
       </div>
     </div>
   );
 }
 
-export default Post;
+export default ProductOnly;

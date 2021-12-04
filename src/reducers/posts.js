@@ -6,6 +6,8 @@ import {
   EDIT_PRODUCT,
 } from '../action/actionType';
 
+// the function handles all states of posts
+
 export default function posts(state = [], action) {
   switch (action.type) {
     case UPDATE_POSTS:
@@ -13,7 +15,7 @@ export default function posts(state = [], action) {
 
     case SORT_POSTS:
       console.log('state.in sort', state);
-      const sorted = state.sort((a, b) => (a.price < b.price ? 1 : -1));
+      const sorted = state.sort((a, b) => (a.price > b.price ? 1 : -1));
       console.log('sorted', sorted);
       return [...sorted];
 

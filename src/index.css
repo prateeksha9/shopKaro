@@ -56,8 +56,6 @@ code {
   margin-right: 50px;
   width: 20%;
   height: 40px;
-  /* background-color: #191970;
-  color: aliceblue; */
   background-color: #e6e6fa;
   margin-left: 4%;
   width: 100px;
@@ -82,8 +80,6 @@ code {
   display: flex;
   flex-direction: row;
   height: 100px;
-  /* position: fixed; */
-  /* z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000; */
 }
 
 .logo {
@@ -203,7 +199,7 @@ code {
   height: 70px;
   margin-top: 20px;
   color: aliceblue;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
 }
 
 .footer-logo {
@@ -232,7 +228,30 @@ code {
   margin-left: 20%;
   margin-top: 5px;
 }
-/* 
-#git-logo {
-  margin-left: 20px;
-} */
+
+.cardPr {
+  width: 80%;
+  background-color: lightblue;
+  margin-left: 10%;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-bottom: 25px;
+}
+
+.cardPrAction button {
+  margin-right: 50px;
+  width: 20%;
+  height: 40px;
+  background-color: lightblue;
+  margin-left: 4%;
+  width: 100px;
+  border-width: 0px;
+}
+
+.cardPrAction img {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border-width: 0;
+}

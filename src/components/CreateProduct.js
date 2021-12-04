@@ -6,6 +6,7 @@ import { addProduct } from '../action/posts';
 // import { Form } from 'react-advanced-form';
 
 function CreateProduct() {
+  // set various states to handle the properties of new products
   const [name, setName] = useState('');
   const [brand, setBrand] = useState('');
   const [price, setPrice] = useState(0);
@@ -14,7 +15,6 @@ function CreateProduct() {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    // const id = posts.length;
     dispatch(addProduct(name, brand, price, description));
     setAdded(true);
   };

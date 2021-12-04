@@ -12,6 +12,7 @@ import {
   Page404,
   ProductPage,
   Footer,
+  ProductOnly,
 } from '.';
 
 function App() {
@@ -25,12 +26,13 @@ function App() {
       <div className="App">
         <Navto />
 
+        {/* define routes for various paths */}
         <Routes>
           <Route path="/shopKaro" element={<Home posts={posts} />} />
           <Route path="/" element={<Home posts={posts} />} />
           <Route path="/addProduct" element={<CreateProduct />} />
+          <Route path="/product/:id" element={<ProductOnly />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/product" element={<ProductPage />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
